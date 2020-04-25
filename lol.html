@@ -540,226 +540,230 @@
     var guardian = 0, assassin = 0, blademaster = 0, fighter = 0, elementalist = 0, gunslinger = 0, knight = 0, scouter = 0, shapeshifter = 0, sorcerer = 0;
     var pieces_num = 0;
 
-    kassadin = ['kassadin', 'voidness', 'sorcerer'];
-    nidalee = ['nidalee', 'wildness', 'shapeshifter'];
-    vayne = ['vayne', 'noble', 'scouter'];
-    mordekaiser = ['mordekaiser' , 'ghost', 'knight'];
-    darius = ['darius', 'empire', 'knight'];
-    garen = ['garen', 'noble', 'knight'];
-    tristana = ['tristana', 'yordle', 'gunslinger'];
-    graves = ['graves', 'pirate', 'gunslinger'];
-    warwick = ['warwick', 'wildness', 'fighter'];
-    fiora = ['fiora', 'noble', 'blademaster'];
-    khazix = ['khazix', 'voidness', 'assassin'];
+    fiora = ['fiora', 'cyber', 'sword'];
+    twistedFate = ['twistedFate', 'spacetime', 'mage'];
+    caitlyn = ['caitlyn', 'spacetime', 'sniper'];
+    khazix = ['khazix' , 'blank', 'assasin'];
+    ziggs = ['ziggs', 'rebel', 'bomber'];
+    zoe = ['zoe', 'star', 'mage'];
+    zayah = ['zayah', 'sky', 'sword'];
+    jarvaniv = ['jarvaniv', 'darkstar', 'guardian'];
+    poppy = ['poppy', 'star', 'vanguard'];
+    malphite = ['malphite', 'rebel', 'fighter'];
+    leona = ['leona', 'cyber', 'vanguard'];
+    graves = ['grabes', 'pirate', 'gunner'];
 
-    ahri = ['ahri', 'wildness', 'sorcerer'];
-    lulu = ['lulu', 'yordle', 'sorcerer'];
-    elise = ['elise', 'demon', 'shapeshifter'];
-    varus = ['varus', 'demon', 'scouter'];
-    lucian = ['lucian', 'noble', 'gunslinger'];
-    braum = ['braum', 'frost', 'guardian'];
-    lissandra = ['lissandra', 'frost', 'elementalist'];
-    blitzcrank = ['blitzcrank', 'robot', 'fighter'];
-    reksai = ['reksai', 'voidness', 'fighter'];
-    shen = ['shen', 'ninja', 'blademaster'];
-    pyke = ['pyke', 'pirate', 'assassin'];
-    twistedFate = ['twistedFate', 'pirate', 'sorcerer'];
-    zed = ['zed', 'ninja', 'assassin'];
+    kaisa = ['kaisa', 'valkyire', 'assasin'];
+    ahri = ['ahri', 'star', 'mage'];
+    yasuo = ['yasuo', 'rebel', 'sword'];
+    annie = ['annie', 'meka', 'mage'];
+    xinzhao = ['xinzhao', 'sky', 'guardian'];
+    lucian = ['lucian', 'cyber', 'gunner'];
+    shen = ['shen', 'spacetime', 'sword'];
+    sona = ['sona', 'rebel', 'antimage'];
+    blitzcrank = ['blitzcrank', 'spacetime', 'fighter'];
+    mordekaiser = ['morderkaiser', 'darkstar', 'vanguard'];
+    rakan = ['rakan', 'sky', 'guardian'];
+    darius = ['darius', 'pirate', 'mana'];
 
-    veigar = ['veigar', 'yordle', 'sorcerer'];
-    morgana = ['morgana', 'demon', 'sorcerer'];
-    shyvana = ['shyvana', 'dragon', 'shapeshifter'];
-    ashe = ['ashe', 'frost', 'scouter'];
-    poppy = ['poppy', 'yordle', 'knight'];
-    kennen = ['kennen', 'ninja', 'yordle', 'elementalist'];
-    volibear = ['volibear', 'frost', 'fighter'];
-    gangplank = ['gangplank', 'pirate', 'blademaster', 'gunslinger'];
-    aatrox = ['aatrox', 'demon', 'blademaster'];
-    katarina = ['katarina', 'empire', 'assassin'];
-    evelynn = ['evelynn', 'demon', 'assassin'];
-    rengar = ['rengar', 'wildness', 'assassin'];
+    
+    kassadin = ['kassadin', 'sky', 'mana'];
+    karma = ['karma', 'darkstar', 'antimage'];
+    jayce = ['jayce', 'pirate', 'vanguard'];
+    ezreal = ['ezreal', 'spacetime', 'gunner'];
+    ashe = ['ashe', 'sky', 'sniper'];
+    syndra = ['syndra', 'star', 'mage'];
+    shaco = ['shaco', 'darkstar', 'assasin'];
+    vi = ['vi', 'cyber', 'fighter'];
+    masteryi = ['masteryi', 'rebel', 'sword'];
+    rumble = ['rumble', 'meka', 'bomber'];
+    lux = ['lux', 'darkstar', 'mage'];
+    neeko = ['neeko', 'star', 'guardian'];
+    
+    fizz = ['fizz', 'meka', 'assasin'];
+    kayle = ['kayle', 'valkyrie', 'sword'];
+    chogath = ['chogath', 'blank', 'fighter'];
+    jinx = ['jinx', 'rebel', 'gunner'];
+    jhin = ['jhin', 'darkstar', 'sniper'];
+    irelia = ['irelia', 'cyber','mana', 'sword'];
+    monkeyking = ['monkeyking', 'spacetime', 'vanguard'];
+    soraka = ['soraka', 'star', 'antimage'];
+    velkoz = ['velkoz', 'blank', 'mage'];
 
-    aurelionsol = ['aurelionsol', 'dragon', 'sorcerer'];
-    gnar = ['gnar', 'yordle', 'wildness', 'shapeshifter'];
-    kindred = ['kindred', 'ghost', 'scouter'];
-    sejuani = ['sejuani', 'frost', 'knight'];
-    leona = ['leona', 'noble', 'guardian'];
-    brand = ['brand', 'demon', 'elementalist'];
-    chogath = ['chogath', 'voidness', 'fighter'];
-
-    draven = ['draven', 'empire', 'blademaster'];
-    akali = ['akali', 'ninja', 'assassin'];
-    karthus = ['karthus', 'ghost', 'sorcerer'];
-    swain = ['swain', 'demon', 'empire', 'shapeshifter'];
-    kayle = ['kayle', 'noble', 'knight'];
-    missfortune = ['missfortune', 'pirate', 'gunslinger'];
-    anivia = ['anivia', 'frost', 'elementalist'];
-    yasuo = ['yasuo', 'purgee', 'blademaster'];
+    xerath = ['xerath', 'darkstar', 'mage'];
+    ekko = ['ekko', 'cyber', 'assassin'];
+    aurelionsol = ['aurelionsol', 'rebel', 'spaceship'];
+    thresh = ['thresh', 'spacetime', 'mana'];
+    missfortune = ['missfortune', 'valkyrie', 'soldier', 'gunner'];
+    lulu = ['lulu', 'sky', 'antimage'];
+    gangplank = ['gankplank', 'pirate', 'soldier', 'bomber'];
 
     star_ = 1;
 
     $(function(){
-      $('.kassadin').mousedown(function(e){
-        potrait_opacity(kassadin, e.which);
-      });
-      $('.nidalee').mousedown(function(e){
-        potrait_opacity(nidalee, e.which);
-      });
-      $('.vayne').mousedown(function(e){
-        potrait_opacity(vayne, e.which);
-      });
-      $('.mordekaiser').mousedown(function(e){
-        potrait_opacity(mordekaiser, e.which);
-      });
-      $('.darius').mousedown(function(e){
-        potrait_opacity(darius, e.which);
-      });
-      $('.garen').mousedown(function(e){
-        potrait_opacity(garen, e.which);
-      });
-      $('.tristana').mousedown(function(e){
-        potrait_opacity(tristana, e.which);
-      });
-      $('.graves').mousedown(function(e){
-        potrait_opacity(graves, e.which);
-      });
-      $('.warwick').mousedown(function(e){
-        potrait_opacity(warwick, e.which);
-      });
       $('.fiora').mousedown(function(e){
         potrait_opacity(fiora, e.which);
-      });
-
-      $('.khazix').mousedown(function(e){
-        potrait_opacity(khazix, e.which);
-      });
-      $('.ahri').mousedown(function(e){
-        potrait_opacity(ahri, e.which);
-      });
-      $('.lulu').mousedown(function(e){
-        potrait_opacity(lulu, e.which);
-      });
-      $('.elise').mousedown(function(e){
-        potrait_opacity(elise, e.which);
-      });
-      $('.varus').mousedown(function(e){
-        potrait_opacity(varus, e.which);
-      });
-      $('.lucian').mousedown(function(e){
-        potrait_opacity(lucian, e.which);
-      });
-      $('.braum').mousedown(function(e){
-        potrait_opacity(braum, e.which);
-      });
-
-      $('.lissandra').mousedown(function(e){
-        potrait_opacity(lissandra, e.which);
-      });
-      $('.blitzcrank').mousedown(function(e){
-        potrait_opacity(blitzcrank, e.which);
-      });
-      $('.reksai').mousedown(function(e){
-        potrait_opacity(reksai, e.which);
-      });
-      $('.shen').mousedown(function(e){
-        potrait_opacity(shen, e.which);
-      });
-      $('.pyke').mousedown(function(e){
-        potrait_opacity(pyke, e.which);
       });
       $('.twistedFate').mousedown(function(e){
         potrait_opacity(twistedFate, e.which);
       });
-      $('.zed').mousedown(function(e){
-        potrait_opacity(zed, e.which);
+      $('.caitlyn').mousedown(function(e){
+        potrait_opacity(caitlyn, e.which);
       });
-      $('.veigar').mousedown(function(e){
-        potrait_opacity(veigar, e.which);
+      $('.khazix').mousedown(function(e){
+        potrait_opacity(khazix, e.which);
       });
-      $('.morgana').mousedown(function(e){
-        potrait_opacity(morgana, e.which);
+      $('.ziggs').mousedown(function(e){
+        potrait_opacity(ziggs, e.which);
       });
-      $('.shyvana').mousedown(function(e){
-        potrait_opacity(shyvana, e.which);
+      $('.zoe').mousedown(function(e){
+        potrait_opacity(zoe, e.which);
       });
-      $('.ashe').mousedown(function(e){
-        potrait_opacity(ashe, e.which);
+      $('.xayah').mousedown(function(e){
+        potrait_opacity(xayah, e.which);
+      });
+      $('.graves').mousedown(function(e){
+        potrait_opacity(graves, e.which);
+      });
+      $('.jarvaniv').mousedown(function(e){
+        potrait_opacity(jarvaniv, e.which);
       });
       $('.poppy').mousedown(function(e){
         potrait_opacity(poppy, e.which);
       });
 
-      $('.kennen').mousedown(function(e){
-        potrait_opacity(kennen, e.which);
+      $('.malphite').mousedown(function(e){
+        potrait_opacity(malphite, e.which);
       });
-      $('.volibear').mousedown(function(e){
-        potrait_opacity(volibear, e.which);
+      $('.leona').mousedown(function(e){
+        potrait_opacity(leona, e.which);
+      });
+      $('.lulu').mousedown(function(e){
+        potrait_opacity(lulu, e.which);
+      });
+      $('.kaisa').mousedown(function(e){
+        potrait_opacity(kaisa, e.which);
+      });
+      $('.annie').mousedown(function(e){
+        potrait_opacity(annie, e.which);
+      });
+      $('.lucian').mousedown(function(e){
+        potrait_opacity(lucian, e.which);
+      });
+      $('.xinzhao').mousedown(function(e){
+        potrait_opacity(xinzhao, e.which);
+      });
+
+      $('.sona').mousedown(function(e){
+        potrait_opacity(sona, e.which);
+      });
+      $('.blitzcrank').mousedown(function(e){
+        potrait_opacity(blitzcrank, e.which);
+      });
+      $('.morderkaiser').mousedown(function(e){
+        potrait_opacity(morderkaiser, e.which);
+      });
+      $('.shen').mousedown(function(e){
+        potrait_opacity(shen, e.which);
+      });
+      $('.rakan').mousedown(function(e){
+        potrait_opacity(rakan, e.which);
+      });
+      $('.twistedFate').mousedown(function(e){
+        potrait_opacity(twistedFate, e.which);
+      });
+      $('.darius').mousedown(function(e){
+        potrait_opacity(darius, e.which);
+      });
+      $('.kassadin').mousedown(function(e){
+        potrait_opacity(kassadin, e.which);
+      });
+      $('.karma').mousedown(function(e){
+        potrait_opacity(karma, e.which);
+      });
+      $('.jayce').mousedown(function(e){
+        potrait_opacity(jayce, e.which);
+      });
+      $('.ashe').mousedown(function(e){
+        potrait_opacity(ashe, e.which);
+      });
+      $('.ezreal').mousedown(function(e){
+        potrait_opacity(ezreal, e.which);
+      });
+
+      $('.syndra').mousedown(function(e){
+        potrait_opacity(syndra, e.which);
+      });
+      $('.shaco').mousedown(function(e){
+        potrait_opacity(shaco, e.which);
       });
       $('.gangplank').mousedown(function(e){
         potrait_opacity(gangplank, e.which);
       });
-      $('.aatrox').mousedown(function(e){
-        potrait_opacity(aatrox, e.which);
+      $('.vi').mousedown(function(e){
+        potrait_opacity(vi, e.which);
       });
-      $('.katarina').mousedown(function(e){
-        potrait_opacity(katarina, e.which);
+      $('.masteryi').mousedown(function(e){
+        potrait_opacity(masteryi, e.which);
       });
-      $('.evelynn').mousedown(function(e){
-        potrait_opacity(evelynn, e.which);
+      $('.rumble').mousedown(function(e){
+        potrait_opacity(rumble, e.which);
       });
 
-      $('.rengar').mousedown(function(e){
-        potrait_opacity(rengar, e.which);
+      $('.lux').mousedown(function(e){
+        potrait_opacity(lux, e.which);
       });
       $('.aurelionsol').mousedown(function(e){
         potrait_opacity(aurelionsol, e.which);
       });
-      $('.gnar').mousedown(function(e){
-        potrait_opacity(gnar, e.which);
+      $('.neeko').mousedown(function(e){
+        potrait_opacity(neeko, e.which);
       });
-      $('.kindred').mousedown(function(e){
-        potrait_opacity(kindred, e.which);
-      });
-      $('.sejuani').mousedown(function(e){
-        potrait_opacity(sejuani, e.which);
-      });
-
-      $('.leona').mousedown(function(e){
-        potrait_opacity(leona, e.which);
-      });
-      $('.brand').mousedown(function(e){
-        potrait_opacity(brand, e.which);
-      });
-      $('.chogath').mousedown(function(e){
-        potrait_opacity(chogath, e.which);
-      });
-      $('.draven').mousedown(function(e){
-        potrait_opacity(draven, e.which);
-      });
-
-      $('.akali').mousedown(function(e){
-        potrait_opacity(akali, e.which);
-      });
-      $('.karthus').mousedown(function(e){
-        potrait_opacity(karthus, e.which);
-      });
-      $('.swain').mousedown(function(e){
-        potrait_opacity(swain, e.which);
+      $('.fizz').mousedown(function(e){
+        potrait_opacity(fizz, e.which);
       });
       $('.kayle').mousedown(function(e){
         potrait_opacity(kayle, e.which);
       });
 
+      $('.jinx').mousedown(function(e){
+        potrait_opacity(jinx, e.which);
+      });
+      $('.jhin').mousedown(function(e){
+        potrait_opacity(jhin, e.which);
+      });
+      $('.chogath').mousedown(function(e){
+        potrait_opacity(chogath, e.which);
+      });
+      $('.irelia').mousedown(function(e){
+        potrait_opacity(irelia, e.which);
+      });
+
+      $('.monkeyking').mousedown(function(e){
+        potrait_opacity(monkeyking, e.which);
+      });
+      $('.soraka').mousedown(function(e){
+        potrait_opacity(soraka, e.which);
+      });
+      $('.velkoz').mousedown(function(e){
+        potrait_opacity(velkoz, e.which);
+      });
+      $('.xerath').mousedown(function(e){
+        potrait_opacity(xerath, e.which);
+      });
+
       $('.missfortune').mousedown(function(e){
         potrait_opacity(missfortune, e.which);
       });
-      $('.anivia').mousedown(function(e){
-        potrait_opacity(anivia, e.which);
+      $('.ekko').mousedown(function(e){
+        potrait_opacity(ekko, e.which);
       });
       $('.yasuo').mousedown(function(e){
         potrait_opacity(yasuo, e.which);
       });
-      
+      $('.thresh').mousedown(function(e){
+        potrait_opacity(thresh, e.which);
+      });
 
 
       $('.info_icon').mouseover(function(){
@@ -1558,7 +1562,7 @@
               <td><img class="info_icon" src="img\info.png"><div class="pieces cost_4 monkeyking"><div class="tier tier_a">A</div><img src=lol_pieces\monkeyking.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="시공간 선봉대">오공</span></div></div></td>
               <td></td>
               <td id="soldier"><br><label trait-tooltip-text="(1) 고유: 용병은 상점에서 스킬을 업그레이드 할 수 있습니다."><span id="soldier">용병</span></label><br><label class="soldier_synergy" style="color:#505050">(1)</label></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_5 gangplank"><div class="tier tier_s">S</div><img src=lol_pieces\gankplank.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="우주해적 용병 폭파광">갱플랭크</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_5 gankplank"><div class="tier tier_s">S</div><img src=lol_pieces\gankplank.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="우주해적 용병 폭파광">갱플랭크</span></div></div></td>
               <td><img class="info_icon" src="img\info.png"><div class="pieces cost_5 missfortune"><div class="tier tier_s">S</div><img src=lol_pieces\missfortune.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="용병 발키리" 총잡이">미스포츈</span></div></div></td>
             </tr>
           <tr class="species">
@@ -1583,7 +1587,7 @@
               <td id="bomber"><br><label trait-tooltip-text="(2) 폭파광에게 스킬 피해를 입은 대상은 1.50초 동안 기절합니다. (스킬 사용당 1회)"><span id="ghost">폭파광</span></label><br><label class="bomber_synergy" style="color:#505050">(2)</label></td>
               <td><img class="info_icon" src="img\info.png"><div class="pieces cost_1 ziggs"><div class="tier tier_f">F</div><img src=lol_pieces\ziggs.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="반군 폭파광">직스</span></div></div></td></td>
               <td><img class="info_icon" src="img\info.png"><div class="pieces cost_3 rumble"><div class="tier tier_a">A</div><img src=lol_pieces\rumble.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="메카파일럿 폭파광">럼블</span></div></div></td></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_5 gangplank"><div class="tier tier_b">B</div><img src=lol_pieces\gangplank.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="우주해적 용병 폭파광">갱플랭크</span></div></div></td></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_5 gankplank"><div class="tier tier_b">B</div><img src=lol_pieces\gankplank.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="우주해적 용병 폭파광">갱플랭크</span></div></div></td></td>
           </tr>
           <tr class="species">
               <td id="fighter"><br><label trait-tooltip-text="싸움꾼은 추가 최대 체력을 얻습니다.\n(2) 추가 체력 300\n(4) 추가 체력 700"><span id="fighter">싸움꾼</span></label><br><label class="fighter_synergy" style="color:#505050">(2)(4)</label></td>
@@ -1665,25 +1669,29 @@
             <td><img class="info_icon" src="img\info.png"><div class="pieces cost_4 chogath"><div class="tier tier_s">S</div><img src=lol_pieces\Chogath.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="공허 싸움꾼">초가스</span></div></div></td>
        </tr>
           <tr class="class">
-              <td id="drakstar"><br><label trait-tooltip-text="아군 싸움꾼들이 추가 체력을 얻습니다. (2) 추가 체력 300 (4) 추가 체력 700"><span id="fighter">싸움꾼</span></label><br><label class="fighter_synergy" style="color:#505050">(2)(4)</label></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_1 warwick"><div class="tier tier_d">D</div><img src=lol_pieces\Warwick.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="야생 싸움꾼">워윅</span></div></div></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_2 blitzcrank"><div class="tier tier_b">B</div><img src=lol_pieces\Blitzcrank.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="로봇 싸움꾼">블리츠크랭크</span></div></div></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_2 reksai"><div class="tier tier_d">D</div><img src=lol_pieces\RekSai.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="공허 싸움꾼">렉사이</span></div></div></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_3 volibear"><div class="tier tier_s">S</div><img src=lol_pieces\Volibear.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="빙하 싸움꾼">볼리베어</span></div></div></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_4 chogath"><div class="tier tier_s">S</div><img src=lol_pieces\Chogath.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="공허 싸움꾼">초가스</span></div></div></td>
-              
+              <td id="darkstar"><br><label trait-tooltip-text="암흑의 별 챔피언이 죽으면 모든 아군 암흑의 별 챔피언의 공격력 및 주문력이 증가합니다.\n3) 공격력 및 주문력 +25\n(6) 공격력 및 주문력 +30\n(9) 공격력 및 주문력 +35"><span id="darkstar">암흑의별</span></label><br><label class="darkstar_synergy" style="color:#505050">(3)(6)(9)</label></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_1 jarvaniv"><div class="tier tier_d">D</div><img src=lol_pieces\jarvaniv.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="암흑의별 수호자">자르반</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_2 mordekaiser"><div class="tier tier_b">B</div><img src=lol_pieces\morderkaiser.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="암흑의별 선봉대">모데카이저</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_3 lux"><div class="tier tier_d">D</div><img src=lol_pieces\lux.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="암흑의별 마법사">럭스</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_3 shaco"><div class="tier tier_s">S</div><img src=lol_pieces\shaco.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="암흑의별 잠입자">샤코</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_4 jhin"><div class="tier tier_s">S</div><img src=lol_pieces\jhin.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="암흑의별 저격수">진</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_5 xerath"><div class="tier tier_s">S</div><img src=lol_pieces\xerath.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="암흑의별 마법사">제라스</span></div></div></td>
               
           </tr>
           <tr class="class">
-              <td id="scouter"><br><label trait-tooltip-text2="3초마다 일정 확률로 다음 3초 동안 공격 속도가 두 배로 증가합니다. (2) 25% (4) 65%"><span id="scouter">정찰대</span></label><br><label class="scouter_synergy" style="color:#505050">(2)(4)</label></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_1 vayne"><div class="tier tier_c">C</div><img src=lol_pieces\Vayne.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="귀족 정찰대">베인</span></div></div></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_2 varus"><div class="tier tier_b">B</div><img src=lol_pieces\Varus.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="악마 정찰대">바루스</span></div></div></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_3 ashe"><div class="tier tier_b">B</div><img src=lol_pieces\Ashe.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="빙하 정찰대">애쉬</span></div></div></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_4 kindred"><div class="tier tier_a">A</div><img src=lol_pieces\Kindred.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="유령 정찰대">킨드레드</span></div></div></td>
+              <td id="sky"><br><label trait-tooltip-text2="모든 아군이 스킬과 기본 공격으로 입히는 피해량 중 일부만큼 체력을 회복합니다.\n(2) 회복량 15%\n(4) 회복량 40%\n(6) 회복량 65%"><span id="sky">천상</span></label><br><label class="sky_synergy" style="color:#505050">(2)(4)(6)</label></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_1 xayah"><div class="tier tier_c">C</div><img src=lol_pieces\xayah.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="천상 검사">자야</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_2 rakan"><div class="tier tier_b">B</div><img src=lol_pieces\rakan.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="천상 수호자">라칸</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_2 xinzhao"><div class="tier tier_b">B</div><img src=lol_pieces\xinzhao.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="천상 수호자">신짜오</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_3 ashe"><div class="tier tier_a">A</div><img src=lol_pieces\ashe.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="천상 저격수">애쉬</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_3 kassadin"><div class="tier tier_a">A</div><img src=lol_pieces\kassadin.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="천상 마나약탈자">카사딘</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_5 lulu"><div class="tier tier_a">A</div><img src=lol_pieces\lulu.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="천상 신비술사">룰루</span></div></div></td>
               <td></td>
-              <td id="guardian"><br><label trait-tooltip-text="전투 시작 시 수호자들과 수호자에게 인접한 챔피언들이 방어력 30을 얻습니다 (2)"><span id="guardian">수호자</span></label><br><label class="guardian_synergy" style="color:#505050">(2)</label></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_2 braum"><div class="tier tier_a">A</div><img src=lol_pieces\Braum.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="빙하 수호자">브라움</span></div></div></td>
-              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_4 leona"><div class="tier tier_c">C</div><img src=lol_pieces\Leona.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="귀족 수호자">레오나</span></div></div></td>
+              <td id="pirate"><br><label trait-tooltip-text="우주 해적 챔피언이 마무리 일격 시 일정 확률로 아이템이 추가로 떨어집니다.\n(2) 50% 확률로 1골드 획득\n(4) 50% 확률로 1골드 및 20% 확률로 기본 아이템 획득"><span id="pirate">우주해적</span></label><br><label class="pirate_synergy" style="color:#505050">(2)(4)</label></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_1 graves"><div class="tier tier_a">A</div><img src=lol_pieces\graves.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="우주해적 총잡이">그레이브즈</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_2 darius"><div class="tier tier_c">C</div><img src=lol_pieces\darius.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="우주해적 마나약탈자">다리우스</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_3 jayce"><div class="tier tier_c">C</div><img src=lol_pieces\jayce.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="우주해적 선봉대">제이스</span></div></div></td>
+              <td><img class="info_icon" src="img\info.png"><div class="pieces cost_5 gankplank"><div class="tier tier_c">C</div><img src=lol_pieces\gankplank.png><div class="name"><span class="star">　</span><br><span data-tooltip-text="우주해적 용병 폭파광">갱플랭크</span></div></div></td>
           </tr>
 
       </table>
