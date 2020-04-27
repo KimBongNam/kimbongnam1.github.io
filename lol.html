@@ -1076,20 +1076,36 @@
     function squad_synergy() {
       $('.count_pieces').text(pieces_num);
 
-      if(demon<2){
-        $('.sword_synergy').text('(2)(4)(6)');
+      if(sword<3){
+        $('.sword_synergy').text('(3)(6)(9)');
+      } else if(sword>=9) {
+        $('.sword_synergy').html('<span style="color:white;">(3)(6)(9)</span>');
       } else if(sword>=6) {
-        $('.sword_synergy').html('<span style="color:white;">(2)(4)(6)</span>');
-      } else if(sword>=4) {
-        $('.demon_synergy').html('<span style="color:white;">(2)(4)</span>(6)');
-      } else if(sword>=2) {
-        $('.demon_synergy').html('<span style="color:white;">(2)</span>(4)(6)');
+        $('.sword_synergy').html('<span style="color:white;">(3)(6)</span>(9)');
+      } else if(sword>=3) {
+        $('.sword_synergy').html('<span style="color:white;">(3)</span>(6)(9)');
       }
       if(sword==0){
         $('.count_sword').css('display','none');
       } else {
         $('.count_sword').css('display','inline');
         $('.count_sword').text("검사 x " + sword);
+      }
+
+      if(rebel<3){
+        $('.rebel_synergy').text('(3)(6)(9)');
+      } else if(rebel>=9) {
+        $('.rebel_synergy').html('<span style="color:white;">(3)(6)(9)</span>');
+      } else if(rebel>=6) {
+        $('.rebel_synergy').html('<span style="color:white;">(3)(6)</span>(9)');
+      } else if(rebel>=3) {
+        $('.rebel_synergy').html('<span style="color:white;">(3)</span>(6)(9)');
+      }
+      if(rebel==0){
+        $('.count_rebel').css('display','none');
+      } else {
+        $('.count_rebel').css('display','inline');
+        $('.count_rebel').text("반군 x " + rebel);
       }
 
       if(mana<2){
@@ -1108,16 +1124,51 @@
         $('.spacetime_synergy').text("(2)(4)(6)");
       } else if(spacetime>=6) {
         $('.spacetime_synergy').html('<span style="color:white;">(2)(4)(6)</span>');
-      } else if(frost>=4) {
-        $('.frost_synergy').html('<span style="color:white;">(2)(4)</span>(6)');
+      } else if(spacetime>=4) {
+        $('.spacetime_synergy').html('<span style="color:white;">(2)(4)</span>(6)');
       } else if(spacetime>=2) {
-        $('.frost_synergy').html('<span style="color:white;">(2)</span>(4)(6)');
+        $('.spacetime_synergy').html('<span style="color:white;">(2)</span>(4)(6)');
       }
-      if(frost==0){
+      if(spaetime==0){
         $('.count_spacetime').css('display','none');
       } else {
         $('.count_spacetime').css('display','inline');
         $('.count_spacetime').text("시공간 x " + spacetime);
+      }
+
+      if(mage<2){
+        $('.mage_synergy').text("(2)(4)(6)(8)");
+      } else if(mage>=8) {
+        $('.mage_synergy').html('<span style="color:white;">(2)(4)(6)(8)</span>');
+      } else if(mage>=6) {
+        $('.mage_synergy').html('<span style="color:white;">(2)(4)(6)</span>(8)');
+      } else if(mage>=4) {
+        $('.mage_synergy').html('<span style="color:white;">(2)(4)</span>(6)(8)');
+      } else if(mage>=2) {
+        $('.mage_synergy').html('<span style="color:white;">(2)</span>(4)(6)(8)');
+      }
+      if(mage==0){
+        $('.count_mage').css('display','none');
+      } else {
+        $('.count_mage').css('display','inline');
+        $('.count_mage').text("마법사 x " + mage);
+      }
+
+
+      if(sky<2){
+        $('.sky_synergy').text("(2)(4)(6)");
+      } else if(sky>=6) {
+        $('.sky_synergy').html('<span style="color:white;">(2)(4)(6)</span>');
+      } else if(sky>=4) {
+        $('.sky_synergy').html('<span style="color:white;">(2)(4)</span>(6)');
+      } else if(sky>=2) {
+        $('.sky_synergy').html('<span style="color:white;">(2)</span>(4)(6)');
+      }
+      if(sky==0){
+        $('.count_sky').css('display','none');
+      } else {
+        $('.count_sky').css('display','inline');
+        $('.count_sky').text("천상 x " + sky);
       }
 
       if(antimage<2){
@@ -1135,42 +1186,44 @@
       }
 
 
-      if(noble<3){
-        $('.noble_synergy').text("(3)(6)");
+      if(cyber<3){
+        $('.cyber_synergy').text("(3)(6)");
       } else if(noble>=6) {
-        $('.noble_synergy').html('<span style="color:white;">(3)(6)</span>');
+        $('.cyber_synergy').html('<span style="color:white;">(3)(6)</span>');
       } else if(noble>=3) {
-        $('.noble_synergy').html('<span style="color:white;">(3)</span>(6)');
+        $('.cyber_synergy').html('<span style="color:white;">(3)</span>(6)');
       }
-      if(noble==0){
-        $('.count_noble').css('display','none');
+      if(cyber==0){
+        $('.cyber_noble').css('display','none');
       } else {
-        $('.count_noble').css('display','inline');
-        $('.count_noble').text("귀족 x " + noble);
+        $('.cyber_noble').css('display','inline');
+        $('.cyber_noble').text("사이버네틱 x " + cyber);
       }
 
-      if(ninja<1){
-        $('.ninja_synergy').text("(1)(4)");
-      } else if(ninja==4) {
-        $('.ninja_synergy').html('<span style="color:white;">(1)(4)</span>');
-      } else if(ninja>=1) {
-        if(ninja > 1){
-          $('.ninja_synergy').html('<span style="color:red;">(1)</span>(4)');
+      if(vanguard<2){
+        $('.ninja_synergy').text("(2)(4)");
+      } else if(vanguard==4) {
+        $('.ninja_synergy').html('<span style="color:white;">(2)(4)</span>');
+      } else if(vanguard>=2) {
+        if(vanguard >= 2){
+          $('.vanguard_synergy').html('<span style="color:red;">(2)</span>(4)');
         }else {
-          $('.ninja_synergy').html('<span style="color:white;">(1)</span>(4)');
+          $('.vanguard_synergy').html('<span style="color:white;">(2)</span>(4)');
         }
       }
-      if(ninja==0){
-        $('.count_ninja').css('display','none');
+      if(vanguard==0){
+        $('.count_vanguard').css('display','none');
       } else {
-        $('.count_ninja').css('display','inline');
-        $('.count_ninja').text("닌자 x " + ninja);
+        $('.count_vanguard').css('display','inline');
+        $('.count_vanguard').text("선봉대 x " + vanguard);
       }
 
-      if(pirate<3){
-        $('.pirate_synergy').text("(3)");
+      if(pirate<2){
+        $('.pirate_synergy').text("(2)(4)");
+      } else if(pirate>=4) {
+        $('.pirate_synergy').html('<span style="color:white;">(2)(4)');
       } else if(pirate>=2) {
-        $('.pirate_synergy').html('<span style="color:white;">(3)');
+        $('.pirate_synergy').html('<span style="color:white;">(2)</span>(4)');
       }
       if(pirate==0){
         $('.count_pirate').css('display','none');
@@ -1179,151 +1232,95 @@
         $('.count_pirate').text("해적 x " + pirate);
       }
 
-      if(ghost<2){
-        $('.ghost_synergy').text("(2)");
-      } else if(ghost>=2) {
-        $('.ghost_synergy').html('<span style="color:white;">(2)');
+      if(bomber<2){
+        $('.bomber_synergy').text("(2)");
+      } else if(bomber>=2) {
+        $('.bomber_synergy').html('<span style="color:white;">(2)');
       }
-      if(ghost==0){
-        $('.count_ghost').css('display','none');
+      if(bomber==0){
+        $('.count_bomber').css('display','none');
       } else {
-        $('.count_ghost').css('display','inline');
-        $('.count_ghost').text("유령 x " + ghost);
+        $('.count_bomber').css('display','inline');
+        $('.count_bomber').text("폭파광 x " + bomber);
+      }
+
+      if(sniper<2){
+        $('.sniper_synergy').text("(2)");
+      } else if(sniper>=2) {
+        $('.sniper_synergy').html('<span style="color:white;">(2)');
+      }
+      if(sniper==0){
+        $('.sniper_bomber').css('display','none');
+      } else {
+        $('.sniper_bomber').css('display','inline');
+        $('.sniper_bomber').text("저격수 x " + sniper);
+      }
+
+      if(valkyrie<2){
+        $('.valkyrie_synergy').text("(2)");
+      } else if(valkyrie>=2) {
+        $('.valkyrie_synergy').html('<span style="color:white;">(2)');
+      }
+      if(valkyrie==0){
+        $('.count_valkyrie').css('display','none');
+      } else {
+        $('.count_valkyrie').css('display','inline');
+        $('.count_valkyrie').text("발키리 x " + valkyrie);
       }
 
 
-      if(robot<1){
-        $('.robot_synergy').text("(1)");
-      } else if(robot==1) {
-        $('.robot_synergy').html('<span style="color:white;">(1)</span>');
+      if(soldier<1){
+        $('.soldier_synergy').text("(1)");
+      } else if(soldier==1) {
+        $('.soldier_synergy').html('<span style="color:white;">(1)</span>');
       }
-      if(robot==0){
-        $('.count_robot').css('display','none');
+      if(soldier==0){
+        $('.count_soldier').css('display','none');
       } else {
-        $('.count_robot').css('display','inline');
-        $('.count_robot').text("로봇 x " + robot);
+        $('.count_soldier').css('display','inline');
+        $('.count_soldier').text("용병 x " + soldier);
       }
 
 
-      if(voidness<3){
-        $('.voidness_synergy').text("(3)");
-      } else if(voidness>=3) {
-        $('.voidness_synergy').html('<span style="color:white;">(3)</span>');
+      if(blank<3){
+        $('.blank_synergy').text("(3)");
+      } else if(blank>=3) {
+        $('.blank_synergy').html('<span style="color:white;">(3)</span>');
       }
-      if(voidness==0){
-        $('.count_voidness').css('display','none');
+      if(blank==0){
+        $('.count_blank').css('display','none');
       } else {
-        $('.count_voidness').css('display','inline');
-        $('.count_voidness').text("공허 x " + voidness);
+        $('.count_blank').css('display','inline');
+        $('.count_blank').text("공허 x " + blank);
       }
 
-      if(wildness<2){
-        $('.wildness_synergy').text("(2)(4)");
-      } else if(wildness>=4) {
-        $('.wildness_synergy').html('<span style="color:white;">(2)(4)');
-      } else if(wildness>=2) {
-        $('.wildness_synergy').html('<span style="color:white;">(2)</span>(4)');
-      } 
-      if(wildness==0){
-        $('.count_wildness').css('display','none');
-      } else {
-        $('.count_wildness').css('display','inline');
-        $('.count_wildness').text("야생 x " + wildness);
+      if(spaceship < 1){
+        $('.spaceship_synergy').text("(1)");
+      } else if(spaceship >= 1){
+        $('.spaceship_synergy').html('<span style="color:white;">(1)');
       }
-      
-      if(yordle<3){
-        $('.yordle_synergy').text("(3)(6)");
-      } else if(yordle>=6) {
-        $('.yordle_synergy').html('<span style="color:white;">(3)(6)</span>');
-      } else if(yordle>=3) {
-        $('.yordle_synergy').html('<span style="color:white;">(3)</span>(6)');
-      }
-      if(yordle==0){
-        $('.count_yordle').css('display','none');
-      } else {
-        $('.count_yordle').css('display','inline');
-        $('.count_yordle').text("요들 x " + yordle);
-      }
-      if(purgee < 1){
-        $('.purgee_synergy').text("(1)");
-      } else if(purgee >= 1){
-        $('.purgee_synergy').html('<span style="color:white;">(1)');
-      }
-      if(purgee == 0){
-        $('.count_purgee').css('display','none');
+      if(spaceship == 0){
+        $('.count_spaceship').css('display','none');
       } else{
-        $('.count_purgee').css('display','inline');
-        $('.count_purgee').text("추방자 x " + purgee);
+        $('.count_spaceship').css('display','inline');
+        $('.count_spaceship').text("우주선 x " + spaceship);
       }
+
 
       if(guardian<2){
-        $('.guardian_synergy').text("(2)");
+        $('.guardian_synergy').text("(2)(4)(6)");
+      } else if(guardian>=6) {
+        $('.guardian_synergy').html('<span style="color:white;">(2)(4)(6)</span>');
+      } else if(guardian>=4) {
+        $('.guardian_synergy').html('<span style="color:white;">(2)(4)</span>(6)');
       } else if(guardian>=2) {
-        $('.guardian_synergy').html('<span style="color:white;">(2)');
+        $('.guardian_synergy').html('<span style="color:white;">(2)</span>(4)(6)');
       } 
       if(guardian==0){
         $('.count_guardian').css('display','none');
       } else {
         $('.count_guardian').css('display','inline');
         $('.count_guardian').text("수호자 x " + guardian);
-      }
-
-      if(sorcerer<3){
-        $('.sorcerer_synergy').text("(3)(6)");
-      } else if(sorcerer>=6) {
-        $('.sorcerer_synergy').html('<span style="color:white;">(3)(6)</span>');
-      } else if(sorcerer>=3) {
-        $('.sorcerer_synergy').html('<span style="color:white;">(3)</span>(6)');
-      }
-      if(sorcerer==0){
-        $('.count_sorcerer').css('display','none');
-      } else {
-        $('.count_sorcerer').css('display','inline');
-        $('.count_sorcerer').text("마법사 x " + sorcerer);
-      }
-
-      if(assassin<3){
-        $('.assassin_synergy').text("(3)(6)");
-      } else if(assassin>=6) {
-        $('.assassin_synergy').html('<span style="color:white;">(3)(6)</span>');
-      } else if(assassin>=3) {
-        $('.assassin_synergy').html('<span style="color:white;">(3)</span>(6)');
-      }
-      if(assassin==0){
-        $('.count_assassin').css('display','none');
-      } else {
-        $('.count_assassin').css('display','inline');
-        $('.count_assassin').text("어쌔신 x " + assassin);
-      }
-
-      if(blademaster<3){
-        $('.blademaster_synergy').text("(3)(6)");
-      } else if(blademaster>=6) {
-        $('.blademaster_synergy').html('<span style="color:white;">(3)(6)</span>');
-      } else if(blademaster>=3) {
-        $('.blademaster_synergy').html('<span style="color:white;">(3)</span>(6)');
-      }
-      if(blademaster==0){
-        $('.count_blademaster').css('display','none');
-      } else {
-        $('.count_blademaster').css('display','inline');
-        $('.count_blademaster').text("검사 x " + blademaster);
-      }
-
-      if(knight<2){
-        $('.knight_synergy').text("(2)(4)(6)");
-      } else if(knight>=6) {
-        $('.knight_synergy').html('<span style="color:white;">(2)(4)(6)</span>');
-      } else if(knight>=4) {
-        $('.knight_synergy').html('<span style="color:white;">(2)(4)</span>(6)');
-      } else if(knight>=2) {
-        $('.knight_synergy').html('<span style="color:white;">(2)</span>(4)(6)');
-      } 
-      if(knight==0){
-        $('.count_knight').css('display','none');
-      } else {
-        $('.count_knight').css('display','inline');
-        $('.count_knight').text("기사 x " + knight);
       }
 
       if(fighter<2){
@@ -1340,56 +1337,45 @@
         $('.count_fighter').text("싸움꾼 x " + fighter);
       }
 
-      if(elementalist>=3){
-        $('.elementalist_synergy').html('<span style="color:white;">(3)</span>');
+      if(meka>=3){
+        $('.meka_synergy').html('<span style="color:white;">(3)</span>');
       } else {
-        $('.elementalist_synergy').text("(3)");
+        $('.meka_synergy').text("(3)");
       }
-      if(elementalist==0){
-        $('.count_elementalist').css('display','none');
+      if(meka==0){
+        $('.count_meka').css('display','none');
       } else {
-        $('.count_elementalist').css('display','inline');
-        $('.count_elementalist').text("원소술사 x " + elementalist);
+        $('.count_meka').css('display','inline');
+        $('.count_meka').text("메카 x " + meka);
       }
 
-      if(gunslinger<2){
-        $('.gunslinger_synergy').text("(2)(4)");
-      } else if(gunslinger>=4) {
-        $('.gunslinger_synergy').html('<span style="color:white;">(2)(4)</span>');
-      } else if(gunslinger>=2) {
-        $('.gunslinger_synergy').html('<span style="color:white;">(2)</span>(4)');
+      if(gunner<2){
+        $('.gunner_synergy').text("(2)(4)");
+      } else if(gunner>=4) {
+        $('.gunner_synergy').html('<span style="color:white;">(2)(4)</span>');
+      } else if(gunner>=2) {
+        $('.gunner_synergy').html('<span style="color:white;">(2)</span>(4)');
       }
-      if(gunslinger==0){
-        $('.count_gunslinger').css('display','none');
+      if(gunner==0){
+        $('.count_gunner').css('display','none');
       } else {
-        $('.count_gunslinger').css('display','inline');
-        $('.count_gunslinger').text("총잡이 x " + gunslinger);
+        $('.count_gunner').css('display','inline');
+        $('.count_gunner').text("총잡이 x " + gunner);
       }
 
-      if(shapeshifter<3){
-        $('.shapeshifter_synergy').text("(3)");
-      } else if(shapeshifter>=3) {
-        $('.shapeshifter_synergy').html('<span style="color:white;">(3)</span>');
-      }
-      if(shapeshifter==0){
-        $('.count_shapeshifter').css('display','none');
-      } else {
-        $('.count_shapeshifter').css('display','inline');
-        $('.count_shapeshifter').text("형상변환자 x " + shapeshifter);
-      }
 
-      if(scouter<2){
-        $('.scouter_synergy').text("(2)(4)");
-      } else if(scouter>=4) {
-        $('.scouter_synergy').html('<span style="color:white;">(2)(4)</span>');
-      } else if(scouter>=2) {
-        $('.scouter_synergy').html('<span style="color:white;">(2)</span>(4)');
+      if(star<3){
+        $('.star_synergy').text("(2)(4)");
+      } else if(star>=6) {
+        $('.star_synergy').html('<span style="color:white;">(2)(4)</span>');
+      } else if(star>=3) {
+        $('.star_synergy').html('<span style="color:white;">(2)</span>(4)');
       }
-      if(scouter==0){
-        $('.count_scouter').css('display','none');
+      if(star==0){
+        $('.count_star').css('display','none');
       } else {
-        $('.count_scouter').css('display','inline');
-        $('.count_scouter').text("정찰대 x " + scouter);
+        $('.count_star').css('display','inline');
+        $('.count_star').text("별수호자 x " + star);
       }
 
 
